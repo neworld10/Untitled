@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     PlayerController mPlayerController;
-    // Start is called before the first frame update
     void Start()
     {
         mPlayerController = GetComponent<PlayerController>();

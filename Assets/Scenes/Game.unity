@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 369235474}
   - component: {fileID: 369235473}
   - component: {fileID: 369235475}
+  - component: {fileID: 369235476}
   m_Layer: 0
   m_Name: userChar
   m_TagString: Untagged
@@ -234,6 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveVector3: {x: 0, y: 0, z: 0}
+  hp: 0
   MoveSpeed: 5
 --- !u!50 &369235475
 Rigidbody2D:
@@ -262,6 +264,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &369235476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369235470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b601ebbba174e158efbeea679a862d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  maxHP: 0
+  stamina: 0
+  movementSpeed: 5
 --- !u!1 &755957937
 GameObject:
   m_ObjectHideFlags: 0
