@@ -8,18 +8,22 @@ public class PlayerInput : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        mPlayerController = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        getKeyInput();
     }
 
     private void getKeyInput()
     {
-        if (Input.GetKeyDown(KeyCode.))
+        var h = Input.GetAxisRaw("Horizontal");
+        var v = Input.GetAxisRaw("Vertical");
+
+        Vector3 moveVector = (Vector3.up * v) + (Vector3.right * h);
+        mPlayerController.MoveVector3 = moveVector;
     }
 
 }
