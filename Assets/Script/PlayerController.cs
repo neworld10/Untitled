@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        deal();
+        // deal();
     }
 
     private void FixedUpdate()
@@ -37,5 +37,6 @@ public class PlayerController : MonoBehaviour
     {
         GetComponent<Stats>().hp -= (float)1.0;
     }
+
 
 }
