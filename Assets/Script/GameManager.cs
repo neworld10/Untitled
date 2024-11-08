@@ -38,5 +38,6 @@ public class GameManager : MonoBehaviour
     void OnCollisionStay2D(Collision2D collision)
     {
         TakeDamage(1);
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
 }
